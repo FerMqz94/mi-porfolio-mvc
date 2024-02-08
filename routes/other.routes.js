@@ -1,12 +1,13 @@
 const express = require('express');
 const router = express.Router();
 const otherController = require('../controllers/other')
+const path = require("path")
 
 // '/'
-router.get('/', otherController.home)
+router.get('/', otherController.main)
 router.get('/home', (req,res) => res.redirect('/'))
 
 // ABOUT
-router.get('/sobre-nosotros', otherController.about)
+router.get('/', otherController.about)
 
 module.exports = router;

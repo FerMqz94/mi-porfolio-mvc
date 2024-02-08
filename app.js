@@ -11,6 +11,7 @@ app.use(express.static('public'))
 
 // ENRUTADORES
 app.use('/', otherRutes)
+app.use('/home', otherRutes)
 app.use('/sobre-nosotros', otherRutes)
 
 
